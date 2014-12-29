@@ -12,3 +12,5 @@ In NAZA or APM or PixHawk use with GPS attitude or position hold mode for best r
 
 
 free repo please give credit if you use the code Thanks.
+
+please donate if you can from paypal to cyril.anthony777@yahoo.com
