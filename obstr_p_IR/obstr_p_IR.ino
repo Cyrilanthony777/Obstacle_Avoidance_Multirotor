@@ -67,6 +67,15 @@ void loop()
   aileron.writeMicroseconds(opx);
   elevator.writeMicroseconds(opy);
   
+  Serial.print(d1);
+  Serial.print(",");
+  Serial.print(d2);
+  Serial.print(",");
+  Serial.print(d3);
+  Serial.print(",");
+  Serial.println(d4);
+  
+  
   
   
 }
