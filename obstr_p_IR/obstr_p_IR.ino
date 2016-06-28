@@ -18,6 +18,11 @@ void loop()
   int temp,temp1,temp2,temp3;
   int e1,e2,e3,e4;
   int op1,op2,op3,op4,opx,opy;
+  int CH1=1500,CH2=1500;
+ 
+  CH1 = pulseIn(2,HIGH,25000); 
+  CH2 = pulseIn(3,HIGH,25000);
+  
   temp=0;
   temp1=0;
   temp2=0;
@@ -61,8 +66,8 @@ void loop()
   op3=e3*Kp;
   op4=e4*Kp;
   
-  opx=1500-op1+op2;
-  opy=1500-op3+op4;
+  opx=CH1-op1+op2;
+  opy=CH2-op3+op4;
   
   aileron.writeMicroseconds(opx);
   elevator.writeMicroseconds(opy);
