@@ -21,7 +21,7 @@ void setup() {
   pinMode(9, OUTPUT);
   digitalWrite(8,LOW);
   digitalWrite(9,LOW);
-  
+  Serial.begin(9600);
   PCMSK0 = (1 << PCINT18) | (1 << PCINT19);
   PCICR = (1 << PCIE0);
   g_ServoIn.start();
@@ -89,6 +89,19 @@ void loop() {
   
   
   g_ServoOut.update();
+  
+  Serial.print(g_values[1]);
+  Serial.print(",");
+  Serial.print(g_values[2]);
+  Serial.print(",");
+  Serial.print(d1);
+  Serial.print(",");
+  Serial.print(d2);
+  Serial.print(",");
+  Serial.print(d3);
+  Serial.print(",");
+  Serial.println(d4);
+  
   
 }
 
