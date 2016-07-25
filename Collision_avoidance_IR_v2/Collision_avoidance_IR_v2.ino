@@ -1,3 +1,10 @@
+/*
+
+   Code Written By Cyril Anthony
+   
+   Not for commercial use 
+
+*/
 #include <ServoIn.h>
 #include <ServoOut.h>
 #include <Timer1.h>
